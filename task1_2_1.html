@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>第2个html页面</title>
+		<style type="text/css">
+			body{
+				background：#ccc;
+				font:18px Arial,黑体；
+			}
+			p{
+				font-size:20px;
+				color: yellow;
+			}
+			div{
+				border: 2px solid #d8d8d8;
+				margin-top: 20px;
+			}
+			#menu{
+				margin: 0px;
+				text-align: left;
+				background: #ccc;
+			}
+			#gui ul{
+				float: right;
+				margin:0px;
+				padding:0px;
+			}
+			#gui ul li{
+				float: right;
+				width: 100px;
+				display: block;
+				line-height: 30px;
+				text-align:center; 
+			}
+			table.tab{
+				border-collapse: collapse;
+				width:600px; 
+				margin:0 
+				auto;
+			}
+			table.tab th{
+				border-width: 1px;
+				padding: 10px;
+				border-style: solid;
+				border-color: #aaa;
+				background-color: #dedede;
+			}
+			table.tab td{
+				border-width: 1px;
+				padding: 10px;
+				border-style: solid;
+				border-color: #aaa;
+				background-color: #fff;
+				text-align:center;
+			}
+			form{
+				margin:0px
+			} 
+			label{
+				float: left;
+				;width: 200px;
+				line-height:25px;
+			} 
+			input{
+				width: 60px;
+				border: 1px solid #aaa;
+			} 
+			textarea{
+				width: 400px;
+				height: 150px;
+			}
+			br{
+				clear: left;
+			} 
+			#button{
+				margin-left: 300px;
+				margin-top: 5px;
+				width:80px;
+				color:blue;
+			} 
+			span{
+				text-indent: 3em;
+				line-height: 20px;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="menu">
+			<h1 style="font-style: large; color:red ">假装有一个百度图标</h1>
+		<div id="gui">
+		<ul>
+			<li><a href="#one">导航链接1</a></li>
+			<li><a href="#two">导航链接2</a></li>
+			<li><a href="#three">导航链接3</a></li>
+		</ul>
+	    </div>
+	</div>
+	<div>
+		<a id="one"><h2>文章一级标题</h2></a>
+		<h3>文章二级标题</h3>
+		<span>html语言是通过利用各种标记来标识文档的结构和超链接、图片、文字、段落、表单等信息，再通过浏览器读取html文档中这些不同的标签来显示页面，形成用户的操作界面，虽然html标记语言显示了文档的结构格式，但并不能精确地定义文档信息必须如何显示和排列，而只是建议web浏览器应该如何显示和排列这些信息，最终在用户面前的显示结果要取决于web浏览器本身的显示风格以及对标签的解释能力，这就是为什么同一文档在不同的浏览器下的显示效果是不一样的。</span>
+		<br/><br/>
+		这里有一个链接<a href="http://www.baidu.com" >百度</a><br/>
+		这里有一个链接<a href="http://www.baidu.com" target="_blank">百度（在新窗口中打开）</a><br/>
+	</div>
+	<div>
+		<a id="two"><h2>另一篇文章一级标题</h2></a>
+		<h3>另一篇文章二级标题</h3>
+		<p>文本标签</p>
+		<b>加粗</b>
+		<i>斜体</i>
+		<u>删除线</u>
+		<strong>强调</strong>
+		<p>图片插入示例</p>
+		<img src="images/pic2.jpg" alt="这是金毛">
+	</div>
+	<div>
+		<a id="three"><h2>最后一篇文章一级标题</h2></a>
+		<h3>最后一篇文章二级标题</h3>
+		<ol>
+			<li>排名1</li>
+			<li>排名2</li>
+			<li>排名3</li>
+			<li>排名4</li>
+			<li>排名5</li>
+		</ol>
+	</div>
+	<div>
+		<p>表格</p>
+		<table class="tab">
+			<caption style="color:red;font-size:25px;text-align:center" >表格名称</caption>
+			<tr>
+				<th>表头单元格</th>
+				<th>表头单元格</th>
+				<th>表头单元格</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td>单元格</td>
+				<td>单元格</td>
+				<td>单元格</td>
+				<td>单元格</td>
+			</tr>
+			<tr>
+				<td>单元格</td>
+				<td>单元格</td>
+				<td>单元格</td>
+				<td>单元格</td>
+			</tr><tr>
+				<td>单元格</td>
+				<td>单元格</td>
+				<td>单元格</td>
+				<td>单元格</td>
+			</tr>
+		</table>
+	</div>
+	<div>
+		<p>注册信息</p>
+		<form action="" method="post">
+			<label for="email">请输入邮箱：</label>
+			<input style="width: 200px" type="text" name="email" value="">
+			<br/>
+			<label for="password">请输入密码：</label>
+			<input style="width: 200px" type="password" name="password" value="">
+			<br/> 
+			<label for="sex">请选择性别：</label>
+			男<input type="radio" name="sex" value="" checked>女<input type="radio" name="sex" value="">
+			<br/>
+			<label for="city">请选择城市：</label>
+			<select name="city" size="value" >
+				<option value="value" selected>北京</option>
+				<option value="value" >上海</option>
+				<option value="value" >广州</option>
+			</select>
+			<br/>
+			<label for="hobby">请选择爱好：</label>
+			跑步<input type="checkbox" name="hobby" value="">旅游<input type="checkbox" name="hobby" value="">跳舞<input type="checkbox" name="hobby" value="">唱歌<input type="checkbox" name="hobby" value="">打球<input type="checkbox" name="hobby" value="">
+			<br/>
+			<label for="introduction">请填写个人描述：</label>
+			<textarea name="name" rows="value" cols="value" value=""></textarea>
+			<br/>
+			<input type="submit" id="button" name="submit" value="提交">
+		</form>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>第一个html页面</title>
+	</head>
+	<body>
+		<h1>网站一级标题</h1>
+		<ul>
+			<li><a href="#one">导航链接1</a></li>
+			<li><a href="#two">导航链接2</a></li>
+			<li><a href="#three">导航链接3</a></li>
+		</ul>
+		<a id="one"><h2>文章一级标题</h2></a>
+		<h3>文章二级标题</h3>
+		<p>html语言是通过利用各种标记来标识文档的结构和超链接、图片、文字、段落、表单等信息，再通过浏览器读取html文档中这些不同的标签来显示页面，形成用户的操作界面，虽然html标记语言显示了文档的结构格式，但并不能精确地定义文档信息必须如何显示和排列，而只是建议web浏览器应该如何显示和排列这些信息，最终在用户面前的显示结果要取决于web浏览器本身的显示风格以及对标签的解释能力，这就是为什么同一文档在不同的浏览器下的显示效果是不一样的。</p><br/><br/>
+		这里有一个链接<a href="http://www.baidu.com" >百度</a><br/>
+		这里有一个链接<a href="http://www.baidu.com" target="_blank">百度（在新窗口中打开）</a><br/>
+		<a id="two"><h2>另一篇文章一级标题</h2></a>
+		<h3>另一篇文章二级标题</h3>
+		<p>文本标签</p>
+		<b>加粗</b>
+		<i>斜体</i>
+		<u>删除线</u>
+		<strong>强调</strong>
+		<p>图片插入示例</p>
+		<img src="images/pic2.jpg" alt="这是金毛">
+		<a id="three"><h2>最后一篇文章一级标题</h2></a>
+		<h3>最后一篇文章二级标题</h3>
+		<ol>
+			<li>排名1</li>
+			<li>排名2</li>
+			<li>排名3</li>
+			<li>排名4</li>
+			<li>排名5</li>
+		</ol>
+		<p>表格</p>
+		<table border="1">
+			<caption>表格名称</caption>
+			<tr>
+				<th>表头单元格</th>
+				<th>表头单元格</th>
+				<th>表头单元格</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td>单元格</td>
+				<td>单元格</td>
+				<td>单元格</td>
+				<td>单元格</td>
+			</tr>
+			<tr>
+				<td>单元格</td>
+				<td>单元格</td>
+				<td>单元格</td>
+				<td>单元格</td>
+			</tr>
+		</table>
+		<p>注册信息</p>
+		<form action="" method="post">
+			请输入邮箱：<input type="text" name="email" value="">
+			请输入密码：<input type="password" name="password" value="">
+			<br> 
+			请选择性别：男<input type="radio" name="sex" value="" checked>女<input type="radio" name="sex" value="">
+			<br>
+			请选择城市：
+			<select name="city" size="value" >
+				<option value="value" selected>北京</option>
+				<option value="value" >上海</option>
+				<option value="value" >广州</option>
+			</select>
+			请选择爱好：跑步<input type="checkbox" name="hobby" value="">旅游<input type="checkbox" name="hobby" value="">跳舞<input type="checkbox" name="hobby" value="">唱歌<input type="checkbox" name="hobby" value="">打球<input type="checkbox" name="hobby" value="">
+			<br>
+			个人描述：<textarea name="name" rows="value" cols="value" value=""></textarea>
+			<br>
+			<input type="submit" name="submit" value="提交">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>第3个html页面</title>
+	<meta charset="utf-8"/>
+	<style>
+		body{
+			margin:0;
+			padding:0;
+			text-align:center;  
+		}
+		#all{
+			width: 1260px;
+			height: 460px;
+			margin:20px auto;
+			background: #eee;
+			border: solid 1px #999;
+			padding: 20px;
+		}
+		#left-box{
+			float: left;
+			width: 200px;
+			height: 120px;
+			background: #fff;
+			border: solid 1px #999;
+			text-align: right;
+		}
+		#left-inner{
+			float: left;
+			width: 80px;
+			height: 80px;
+			background: #eee;
+			border: solid 1px #999;
+			margin:20px 20px;
+			text-align: center;
+		}
+		#middle-box{
+			float:left;
+			width:892px;
+			height:400px;
+			background: #fff;
+			position: relative;
+			margin-left: 20px;
+
+			border: solid 1px #999;
+		}
+		#right-box{
+			float: right;
+			width: 120px;
+			height: 428px;
+			background: #fff;
+			border: solid 1px #999;
+		}
+		.right-inner{
+			float: left;
+			width: 80px;
+			height:80px;
+			background: #eee;
+			border: solid 1px #999;
+			margin-left: 20px;
+		}
+		.nav{
+			float: left;
+			height:20px;
+			width: 100%;
+			overflow: hidden;
+			clear:both;
+		}
+	</style>
+</head>
+<body>
+	<div id="all">
+		<div id="left-box">
+			<span style="font-size: 12px">我不是针对你</span>
+			<div id="left-inner">logo</div>
+		</div>
+		<div id="middle-box">
+			<p>我们的团队balabala</p>
+		</div>
+		<div id="right-box">
+			<div class="nav"></div>
+			<div class="right-inner"><img src="images/pic2.jpg" width="80" height="80"></div>
+			<div class="nav"></div>
+			<div class="right-inner"><img src="images/pic3.jpg" width="80" height="80"></div>
+			<div class="nav"></div>
+			<div class="right-inner"><img src="images/pic4.jpg" width="80" height="80"></div>
+			<div class="nav"></div>
+			<div class="right-inner"><img src="images/pic5.jpg" width="80" height="80"></div>
+		</div>
+	</div>
+</body>
+</html>
